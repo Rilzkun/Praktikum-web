@@ -4,68 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NegaraPedia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Fakta-Fakta Negara di Dunia</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#facts">Fakta</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
+        <div class="container header-dalam">
+            <div class="logo">NegaraPedia</div>
+            <nav>
+                <ul class="menu-nav">
+                    <li class="item-nav"><a href="#home" class="link-nav">Home</a></li>
+                    <li class="item-nav"><a href="#about" class="link-nav">Tentang</a></li>
+                    <li class="item-nav"><a href="#facts" class="link-nav">Fakta</a></li>
+                    <li class="item-nav"><a href="#contact" class="link-nav">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Selamat Datang</h2>
+    <main class="container">
+        <section id="home" class="hero">
+            <h2>Selamat Datang di NegaraPedia</h2>
             <p>Website ini membahas berbagai fakta menarik tentang negara-negara di dunia.</p>
+            <a href="#facts" class="tombol">Jelajahi Fakta</a>
         </section>
 
         <section id="about">
             <h2>Tentang Website Ini</h2>
-            <p>Website ini dibuat untuk memberikan informasi unik dan menarik tentang negara-negara, budaya, dan ciri khasnya.</p>
+            <p>Website ini dibuat untuk memberikan informasi unik dan menarik tentang negara-negara, budaya, dan ciri khasnya. Kami berkomitmen untuk menyajikan informasi yang akurat dan menarik bagi semua pengunjung.</p>
+            <a href="#contact" class="tombol">Hubungi Kami</a>
         </section>
 
         <section id="facts">
             <h2>Fakta Menarik</h2>
-
-            <article>
-                <h3>Prancis</h3>
-                <p>Prancis terkenal dengan Menara Eiffel dan budaya kulinernya, serta merupakan negara yang paling banyak dikunjungi wisatawan di dunia.</p>
-            </article>
-
-            <article>
-                <h3>Brazil</h3>
-                <p>Brazil adalah negara terbesar di Amerika Selatan dengan hutan hujan Amazon yang luas dan telah menjadi produsen kopi terbesar di dunia selama lebih dari 150 tahun.</p>
-            </article>
-
-            <article>
-                <h3>Indonesia</h3>
-                <p>Indonesia adalah negara kepulauan terbesar di dunia dengan lebih dari 17.000 pulau, memiliki gunung berapi aktif terbanyak di dunia, dan menjadi rumah bagi lebih dari 300 kelompok etnis.</p>
-            </article>
+            <div class="grid-kartu" id="container-kartu">
+            </div>
         </section>
       
         <section id="contact">
             <h2>Kontak</h2>
-            <ul>
-                <li>Email: <a href="mailto:ranggalawe58191@gmail.com">ranggalawe58191@gmail.com</a></li>
-                <li>Wa: <a href="https://wa.me/6282199593756">082199593756</a></li>
-                <li>Ig: <a href="https://instagram.com/rangga5102">@rangga5102</a></li>
+            <ul class="daftar-kontak">
+                <li class="item-kontak">
+                    <span class="ikon-kontak">📧</span>
+                    Email: <a href="mailto:ranggalawe58191@gmail.com">ranggalawe58191@gmail.com</a>
+                </li>
+                <li class="item-kontak">
+                    <span class="ikon-kontak">📱</span>
+                    WhatsApp: <a href="https://wa.me/6282199593756">082199593756</a>
+                </li>
+                <li class="item-kontak">
+                    <span class="ikon-kontak">📷</span>
+                    Instagram: <a href="https://instagram.com/rangga5102">@rangga5102</a>
+                </li>
             </ul>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2025 Fakta Negara. All rights reserved.</p>
-        <p>Referensi desain: 
-            <a href="https://www.idntimes.com/hype/fun-fact/10-fakta-random-dan-unik-tentang-negara-negara-di-dunia-menakjubkan-01-byk55-82jf1k" target="_blank">IDN times</a>
-        </p>
+        <div class="container">
+            <p>&copy; 2025 NegaraPedia. All rights reserved.</p>
+            <p>Referensi desain: 
+                <a href="https://www.idntimes.com/hype/fun-fact/10-fakta-random-dan-unik-tentang-negara-negara-di-dunia-menakjubkan-01-byk55-82jf1k" target="_blank">IDN Times</a>
+            </p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
